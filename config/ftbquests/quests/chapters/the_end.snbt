@@ -1,0 +1,415 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_end"
+	group: ""
+	icon: "minecraft:end_portal_frame"
+	id: "50EEC609E833AB5F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Legends speak of a portal to a forgotten realm—The End."
+				"But this path is not unlocked by mere Eyes of Ender."
+				"Seek out the &3twelve unique Eyes&r scattered across the world."
+				"Only by uniting them will you reveal the way to the End Portal and face &dthe Dragon&r."
+			]
+			id: "4D36AAFE17F5CD9C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F2C1C227A8CC557"
+				table_id: 6935663685294125539L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_portal_frame"
+				id: "444AC080F3243355"
+				title: "Enter The End Dimension"
+				type: "dimension"
+			}]
+			title: "Enter &8The End"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4D36AAFE17F5CD9C"]
+			dependency_requirement: "all_started"
+			icon: "minecraft:dragon_head"
+			id: "2A51F2BA00FCA9DF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D6F471031B53771"
+				table_id: 327386274853989853L
+				type: "random"
+			}]
+			subtitle: "Respawned the same way as normal - placing an end crystal on all four cardinal directions on the exit portal's outer rim."
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_head"
+				id: "412B85684482E982"
+				title: "Kill The Ender Dragon"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat the &8&lEnder Dragon"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4D36AAFE17F5CD9C"]
+			icon: "alexsmobs:void_worm_eye"
+			id: "43E0AD91C15669D8"
+			rewards: [
+				{
+					id: "560758CF4303B85B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "227AEA15EF87B7A3"
+					item: "friendsandfoes:totem_of_illusion"
+					type: "item"
+				}
+			]
+			subtitle: "Put the Crimson Mosquito Larva into the Capsid, then throw the Mysterious Lava into the void of The End."
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				id: "422D753E01DAF391"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Summon and Kill the &9Void Worm"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4D36AAFE17F5CD9C"]
+			id: "66E7CB465F845A15"
+			rewards: [
+				{
+					id: "52F190738B4D81C2"
+					item: "cataclysm:music_disc_ender_guardian"
+					type: "item"
+				}
+				{
+					id: "23A3E1D1613B5D74"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Found in Ruined Citadels in &5The End &rislands. Locate with an &5Eye of Void"
+			tasks: [{
+				entity: "cataclysm:ender_golem"
+				icon: "cataclysm:void_core"
+				id: "02B05099ED164F8C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat the &5Ender Golem"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4D36AAFE17F5CD9C"]
+			id: "355ABBA15B609961"
+			rewards: [{
+				id: "130722604E3DE9A7"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "Found at the bottom of Ruined Citadels."
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				icon: "cataclysm:gauntlet_of_guard"
+				id: "214C6BC2D73A0DC5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat the &3Ender Guardian"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4D36AAFE17F5CD9C"]
+			id: "36B77024E67E279C"
+			rewards: [
+				{
+					id: "608A75E04FED4206"
+					item: "alexsmobs:capsid"
+					type: "item"
+				}
+				{
+					id: "25D8FBF0CF5434F3"
+					item: "alexsmobs:mosquito_larva"
+					type: "item"
+				}
+			]
+			subtitle: "Use TNT to defeat the boss"
+			tasks: [{
+				id: "7B37F3A22D97E75F"
+				item: "stalwart_dungeons:void_crystal"
+				type: "item"
+			}]
+			title: "Defeat &3The Shelterer &rand obtain a Void Crystal"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			id: "4D59A4D6B16CC8FD"
+			rewards: [{
+				id: "7C87F365670F7CCC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "5E752FB2E5134A3F"
+				item: {
+					Count: 1
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "7912793D748C0773"
+			rewards: [{
+				id: "3DA12E934995A5C2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "1C3B936F69672A79"
+				item: {
+					Count: 1
+					id: "endrem:cold_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			id: "18DDAA0E74D612BB"
+			rewards: [{
+				id: "2847B37BBD2E5B65"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "4C061198E2DB9F66"
+				item: {
+					Count: 1
+					id: "endrem:corrupted_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "4679BC881D14748D"
+			rewards: [{
+				id: "178B324A858F0BE6"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "2769DF0C333AD1F4"
+				item: {
+					Count: 1
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "6953982814E9E455"
+			rewards: [{
+				id: "4A7BF985AE064F57"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "06E04BBC40B1AF84"
+				item: {
+					Count: 1
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "44971E37610B83BA"
+			rewards: [{
+				id: "0E3D4059E6C64E82"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "4DD1D8F7E70135CE"
+				item: {
+					Count: 1
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			id: "771662C2A63689F4"
+			rewards: [{
+				id: "5B4493AA56C9E255"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "11496E4268237CAB"
+				item: {
+					Count: 1
+					id: "endrem:rogue_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			id: "48E6069E74DE2830"
+			rewards: [{
+				id: "2B5E153D5EC0FE02"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "00283EA8DC39B8B7"
+				item: {
+					Count: 1
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			id: "54002E5A1A76BF7C"
+			rewards: [{
+				id: "34A8A35D237674C0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "40F33C27DBE23C43"
+				item: {
+					Count: 1
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			id: "211620A0C0FEECCC"
+			rewards: [{
+				id: "4BA5719E29D7D2FE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "179D657726BF3A46"
+				item: {
+					Count: 1
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			id: "55158A92DF1D3140"
+			rewards: [{
+				id: "410EE467EA176D79"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "11CBB2D053BC5E73"
+				item: {
+					Count: 1
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "5A775CC1DDA042AC"
+			rewards: [{
+				id: "397F1F2631E6629D"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "4820ED4B6BDA2BF4"
+				item: {
+					Count: 1
+					id: "endrem:guardian_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+	]
+	title: " &5The End"
+}
