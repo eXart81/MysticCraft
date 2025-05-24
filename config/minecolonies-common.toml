@@ -1,11 +1,11 @@
 
-#Tous les objets de configuration liés à la base du jeu
+#All configuration items related to the core gameplay
 [gameplay]
-	#Générer ou non des navires et des camps de ravitaillement dans des coffres. [Defaut: true]
+	#Whether to generate supply ships and camps in loot chests. [Default: true]
 	generatesupplyloot = true
 
-#Toutes les configurations liées au système de requête
+#All configurations related to the request system
 [requestsystem]
-	#Est-ce que le système de requête doit montrer les informations de debug dans le debug.info? Utile en cas de dysfonctionnement. [Defaut: false]
+	#Should the request system show debug information in the debug.log? Useful if malfunctioning. [Default: false]
 	enabledebuglogging = false
 
